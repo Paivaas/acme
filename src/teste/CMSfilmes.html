@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS - Cadastro de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Filmes</h1>
+    <form id="movieForm">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br>
+
+        <label for="sinopse">Sinopse:</label>
+        <textarea id="sinopse" name="sinopse" required></textarea><br>
+
+        <label for="fotoCapa">Foto Capa (URL):</label>
+        <input type="url" id="fotoCapa" name="fotoCapa" required><br>
+
+        <label for="dataLancamento">Data de Lançamento:</label>
+        <input type="date" id="dataLancamento" name="dataLancamento" required><br>
+
+        <label for="dataRelancamento">Data de Relançamento:</label>
+        <input type="date" id="dataRelancamento" name="dataRelancamento"><br>
+
+        <label for="duracao">Duração (minutos):</label>
+        <input type="number" id="duracao" name="duracao" required><br>
+
+        <label for="valor">Valor (R$):</label>
+        <input type="number" id="valor" name="valor" step="0.01" required><br>
+
+        <label for="classificacaoIndicativa">Classificação Indicativa:</label>
+        <input type="text" id="classificacaoIndicativa" name="classificacaoIndicativa" required><br>
+
+        <button type="submit">Cadastrar Filme</button>
+    </form>
+    <a href="home.html">Ver Filmes Cadastrados</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

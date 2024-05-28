@@ -1,0 +1,61 @@
+.visual{
+    height: 100vh;
+    width: 50vw;
+}
+.visual .all{
+    border-radius: 0px 0px 340px 340px;
+    background-image: linear-gradient(90deg,#6587FF,#516DFD,#4755D4, #4755D4);
+    position: relative;
+    rotate: -50deg;
+}
+.v1{
+    height: 800px;
+    width: 400px;
+    top: -100px;
+    left: -80px;
+}
+.v1_opacity{
+    height: 884px;
+    width: 470px;
+    opacity: .3;
+    top: -950px;
+    left: -130px;
+    animation: pulse 3s infinite;
+    animation-direction: alternate, reverse;
+}
+
+.v2{
+    height: 400px;
+    width: 200px;
+    top: -1900px;
+    left: 280px;
+}
+
+.v3{
+    height: 300px;
+    width: 150px;
+    top: -1500px;
+    left: -10px;
+}
+
+.v4{
+    height: 5600px;
+    width: 200px;
+    border-radius: 0px 0px 340px 340px;
+
+    background-image: linear-gradient(90deg,#6587FF,#516DFD,#4755D4, #4755D4);
+    position: relative;
+    top: -2650px;
+    left: 2300px;
+    rotate: 130deg;
+    
+}
+
+@keyframes pulse {
+    to{
+      transform: scale(1.05);
+    }
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS - Filmes</title> 
+    <link rel="icon" href="../img/cmsIcon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="../output.css" rel="stylesheet">
+    <script src="cards.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CMS - Filmes</h1>
+        <form id="contentForm">
+            <input type="hidden" id="contentId">
+            <div>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" required>
+            </div>
+            <div>
+                <label for="sinopse">Sinopse</label>
+                <textarea id="sinopse" required></textarea>
+            </div>
+            <div>
+                <label for="fotoCapa">Foto de Capa (URL)</label>
+                <input type="url" id="fotoCapa" required>
+            </div>
+            <div>
+                <label for="dataLancamento">Data de Lançamento</label>
+                <input type="date" id="dataLancamento" required>
+            </div>
+            <div>
+                <label for="dataRelancamento">Data de Relançamento</label>
+                <input type="date" id="dataRelancamento">
+            </div>
+            <div>
+                <label for="duracao">Duração (minutos)</label>
+                <input type="number" id="duracao" required>
+            </div>
+            <div>
+                <label for="valor">Valor (R$)</label>
+                <input type="number" id="valor" step="0.01" required>
+            </div>
+            <div>
+                <label for="classificacaoIndicativa">Classificação Indicativa</label>
+                <input type="text" id="classificacaoIndicativa" required>
+            </div>
+            <button type="submit">Salvar</button>
+        </form>
+        <div id="contentList"></div>
+    </div>
+</body>
+</html>

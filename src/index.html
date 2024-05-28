@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./loginACME/style.css">
+    <script src="./loginACME/scripts.js" defer></script>
+    <title>Acme Filmes</title>
+</head>
+<body class="flex overflow-hidden">
+    <section class="visual">
+        <div class="all v1"></div>
+        <div class="all v1_opacity"></div>
+        <div class="all v2"></div>
+        <div class="all v3"></div> 
+        <div class="v4"></div>
+    </section>
+    <div class="w-96 flex flex-col justify-center gap-10">
+        <div class="flex justify-center"><img src="./img/AcmeLogo.png" width="190px" alt=""></div>
+        <form id="loginForm" class="flex flex-col gap-5">
+            <input class="bg-stone-300 h-14 rounded-2xl py-6 px-5 text-2xl" placeholder="Usuário" type="text" id="username" name="username" required>
+
+            <input class="bg-stone-300 h-14 rounded-2xl py-6 px-5 text-2xl" placeholder="Senha" type="password" id="password" required>
+
+            <button class="text-gray-50 rounded-3xl font-semibold h-14 bg-gradient-to-r px-48 from-blue-600 via-indigo-800 to-indigo-900 flex justify-center items-center" type="submit"><p>LOGIN</p></button>
+           <div class="flex justify-center text-zinc-600"> 
+            <p>forget Username Password?</p>
+           </div>
+
+           <span class="h-24"></span>
+
+          <div id="registerbutton" class="cursor-pointer flex gap-2 justify-center text-zinc-600 hover:scale-95">
+            <p>Create Your Account</p>
+            <img src="./img/Arrow 1.png" width="34px" alt="Ir para o cadastro">
+          </div>
+        </form>
+    </div>
+</body>
+</html>

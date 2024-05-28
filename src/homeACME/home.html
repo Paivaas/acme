@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../CMSfilme/script.js"></script>
+    <script src="cards.js" defer></script>
+    <title>Acme Filmes</title>
+</head>
+<body class="flex flex-col overflow-hidden">
+
+    <nav class="h-20 w-full flex justify-between items-center bg-gradient-to-r px-48 from-blue-600 via-indigo-800 to-indigo-900">
+        <img src="../img/LogoNav.png" width="90px" alt="">
+        <div class="bg-white p-2 rounded-3xl flex items-center justify-between gap-4 px-4">
+          <input type="text">
+          <button>
+            <img src="../img/image 8.png" height="20px" alt="">
+          </button>
+        </div>
+      </nav>
+
+      <main class="h-screen w-full bg-stone-950 flex justify-center overflow-scroll">
+            <div class="flex w-10/12">
+                <div class="w-3/4 h-4/5 pt-12 grid grid-cols-6 gap-6" id="cardsContainer"></div>
+            </div>
+    </main>
+</body>
+</html>
+

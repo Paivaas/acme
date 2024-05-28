@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro</title>
+</head>
+<body class="flex overflow-hidden">
+    <section class="visual">
+        <div class="all v1"></div>
+        <div class="all v1_opacity"></div>
+        <div class="all v2"></div>
+        <div class="all v3"></div> 
+        <div class="v4"></div>
+    </section>
+    <div class="flex flex-col justify-center w-96 gap-11">
+        <h2 class="font-semibold text-4xl">Registrar</h2>
+        <form class="flex flex-col" id="registerForm">
+            <label for="newUsername">Usuário</label>
+            <input class="h-14 border-2 rounded-2xl" type="text" id="newUsername" name="newUsername" required>
+
+            <span class="h-6"></span>
+
+            <label for="newPassword">Senha</label>
+            <input class="h-14 border-2 rounded-2xl" type="password" id="newPassword" name="newPassword" required>
+
+            <span class="h-10"></span>
+
+            <button class="text-gray-50 rounded-full font-semibold h-14 bg-gradient-to-r px-48 from-blue-600 via-indigo-800 to-indigo-900 flex justify-center items-center" type="submit">Registrar</button>
+
+            <span class="h-24"></span>
+
+          <div id="registerbutton" class="cursor-pointer flex gap-2 justify-center text-zinc-600 hover:scale-95">
+            <img class="rotate-180" src="../img/Arrow 1.png" width="34px" alt="Ir para o cadastro">
+            <p>Voltar</p>
+          </div>
+        </form>
+    </div>
+</body>
+</html>
